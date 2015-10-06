@@ -1,0 +1,50 @@
+CLASS 1
+
+Profressional
+	:members:
+		String professional_name
+		bool is_working
+		String assignment_title
+		Vector<String> qualifications
+
+	:methods:
+		public Professional(String name)
+		void setName(String name)
+		void setWorkingState(bool is_working)
+		void setAssignmentTitle(String title)
+		void setQualification(String qualification)
+		bool hasQualification(String qualification)
+		String getName()
+		bool getWorkingState()
+		String getAssignmentTitle(String title)
+		String[] getQualification()
+
+
+CLASS 2	
+Company
+	:members:
+		String company_name
+		Vector<String> needs
+
+	:methods:
+		Company()
+		Company(String name,String need)
+		void setCompanyName(String companyname)
+		void setNeeds(String needs)
+		String getCompanyName()
+		Vector<String> getNeeds()
+
+
+
+CLASS 3
+CCC
+	:members:
+
+		Vector<Professional> list_of_professional
+		String required_qualification
+		Vector<Company> list_of_clients
+
+	:methods:
+		CCC(String name)
+		Professional findmatch(Vector<Professional> list_of_professional,String qualification)
+		clientOpening(Professional professional,Company company)
